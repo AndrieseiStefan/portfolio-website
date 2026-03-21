@@ -1,4 +1,4 @@
-import type { MouseEventHandler, RefObject } from 'react';
+import type { MouseEvent, MouseEventHandler, RefObject } from 'react';
 import { Container } from '../../ui/Container';
 import { contact } from '../../../data/contact';
 import { profile } from '../../../data/profile';
@@ -14,6 +14,26 @@ export function HomeHero({
   onMouseMove: MouseEventHandler<HTMLElement>;
   onMouseLeave: MouseEventHandler<HTMLElement>;
 }) {
+  const handleContactClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    const target = document.querySelector<HTMLElement>('#contact');
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+
+    const headerOffset = window.innerWidth < 1024 ? 52 : 64;
+    const sectionContentOffset = headerOffset;
+    const top =
+      target.getBoundingClientRect().top + window.scrollY - headerOffset + sectionContentOffset;
+
+    window.history.replaceState(null, '', '#contact');
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <section
       id="hero"
@@ -50,6 +70,7 @@ export function HomeHero({
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#contact"
+              onClick={handleContactClick}
               className="w-full rounded-md bg-[#0070F3] px-8 py-3.5 font-medium text-white shadow-[0_0_20px_rgba(0,112,243,0.3)] transition-transform hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(0,112,243,0.5)] sm:w-auto"
             >
               Audit My Product
