@@ -3,7 +3,10 @@ import { contact } from '../../../data/contact';
 
 export function HomeContact() {
   return (
-    <section id="contact" className="scroll-mt-16 relative overflow-hidden border-t border-ink/12 py-32 dark:border-white/5">
+    <section
+      id="contact"
+      className="scroll-mt-16 relative flex min-h-[100svh] items-center overflow-hidden border-t border-ink/12 py-32 dark:border-white/5"
+    >
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent to-[#0070F3]/5 dark:to-[#0070F3]/5" />
       <Container>
         <div className="reveal relative z-10 mx-auto max-w-3xl text-center">
