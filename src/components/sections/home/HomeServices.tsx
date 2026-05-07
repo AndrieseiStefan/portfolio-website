@@ -37,7 +37,7 @@ export function HomeServices() {
               <span className="h-3 w-3 rounded-full bg-red-500/80" />
               <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
               <span className="h-3 w-3 rounded-full bg-green-500/80" />
-                <span className="ml-4 rounded bg-ink/6 px-2 py-1 text-xs text-ink/65 dark:bg-white/5 dark:text-zinc-400">
+                <span className="ml-4 rounded-md bg-[#e8eff9] px-2 py-1 text-[11px] text-ink/60 dark:bg-white/5 dark:text-zinc-400">
                 QA Report
               </span>
             </div>

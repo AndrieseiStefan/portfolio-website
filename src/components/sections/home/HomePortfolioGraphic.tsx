@@ -76,9 +76,9 @@ export function HomePortfolioGraphic({
                   Portfolio
                 </span>
               </div>
-              <div className={['h-3 w-3/4 rounded-full', isDark ? 'bg-white/10' : 'bg-ink/12'].join(' ')} />
-              <div className={['mt-3 h-3 w-full rounded-full', isDark ? 'bg-white/5' : 'bg-ink/8'].join(' ')} />
-              <div className={['mt-2 h-3 w-5/6 rounded-full', isDark ? 'bg-white/5' : 'bg-ink/8'].join(' ')} />
+              <div className={['h-3 w-3/4 rounded-full', isDark ? 'bg-white/10' : 'bg-ink/18'].join(' ')} />
+              <div className={['mt-3 h-3 w-full rounded-full', isDark ? 'bg-white/5' : 'bg-ink/13'].join(' ')} />
+              <div className={['mt-2 h-3 w-5/6 rounded-full', isDark ? 'bg-white/5' : 'bg-ink/13'].join(' ')} />
             </div>
             <div className="grid grid-cols-3 gap-3">
               {['Clarity', 'UX', 'Product'].map((item) => (
