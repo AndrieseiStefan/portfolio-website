@@ -32,15 +32,15 @@ export function HomeProcess() {
         </div>
 
         <div className="reveal relative grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="absolute left-[10%] right-[10%] top-6 hidden h-px bg-gradient-to-r from-transparent via-ink/28 to-transparent dark:via-white/10 md:block" />
+          <div className="absolute left-[16.67%] right-[16.67%] top-6 hidden h-px bg-gradient-to-r from-transparent via-[#8fb4ea]/85 to-transparent shadow-[0_0_12px_rgba(0,112,243,0.16)] md:block dark:from-transparent dark:via-white/10 dark:to-transparent dark:shadow-none" />
           {processSteps.map((item, index) => (
             <div key={item.step} className="relative text-center">
               <div
                 className={[
                   'relative z-10 mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#18181B] font-bold',
                   index === 2
-                    ? 'bg-[#0070F3] text-white shadow-[0_0_20px_rgba(0,112,243,0.3)]'
-                    : 'bg-white text-ink shadow-[0_0_20px_rgba(0,112,243,0.12)] dark:bg-[#09090B] dark:text-[#FAFAFA] dark:shadow-[0_0_20px_rgba(0,112,243,0.3)]',
+                    ? 'bg-[#0070F3] text-white shadow-[0_0_28px_rgba(0,112,243,0.38)]'
+                    : 'bg-white text-ink shadow-[0_0_24px_rgba(0,112,243,0.18)] dark:bg-[#09090B] dark:text-[#FAFAFA] dark:shadow-[0_0_20px_rgba(0,112,243,0.3)]',
                 ].join(' ')}
               >
                 {item.step}
